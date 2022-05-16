@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap");
+/* font-family: 'Oleo Script', cursive; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(248, 248, 248);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hidden {
+  display: none;
+}
+
+nav > h1,
+.login-area > button,
+.login-area > p,
+.profile-image,
+.profile-top > h3,
+.profile-top > button,
+.profile-follow > p,
+.arcodian > p,
+.image {
+  cursor: pointer;
+}
+
+header {
+  height: 60px;
+  background-color: white;
+  box-shadow: 0 1px 2px rgb(194, 194, 194);
+}
+
+nav {
+  max-width: 937px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav > h1 {
+  font-family: "Oleo Script", cursive;
+}
+
+nav > input {
+  width: 268px;
+  height: 37px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(235, 233, 233);
+}
+
+nav > input::placeholder {
+  padding-left: 5px;
+  color: rgb(110, 110, 110);
+}
+
+.login-area {
+  display: flex;
+  align-items: center;
+}
+
+.login-area > button {
+  width: 62px;
+  height: 30px;
+
+  font-weight: bold;
+  font-size: 0.9rem;
+
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(4, 144, 238);
+}
+
+.login-area > button a {
+  color: white;
+}
+
+.login-area > p {
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-left: 10px;
+  color: rgb(4, 144, 238);
+}
+
+section {
+  max-width: 937px;
+  margin: 0 auto;
+}
+
+.profile {
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+  margin-top: 30px;
+  height: 240px;
+  border-bottom: 1px solid rgb(194, 194, 194);
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  background-color: aquamarine;
+  border-radius: 50%;
+  margin-right: 100px;
+  margin-left: 70px;
+}
+
+.profile-info {
+  width: 272px;
+}
+
+.profile-top {
+  display: flex;
+}
+
+.profile-top > h3 {
+  font-size: 1.2rem;
+}
+
+.profile-top > button {
+  padding: 5px 10px;
+  margin-left: 30px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(4, 144, 238);
+}
+
+.profile-follow {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.profile-mention {
+  margin-top: 30px;
+}
+
+.arcodian {
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 30px;
+  font-size: 0.8rem;
+}
+
+.arcodian > p:first-child {
+  margin-right: 63px;
+}
+
+.image-book {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.image-box {
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.image-box > div:not(.image) {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.image {
+  width: 31%;
+}
+
+.none-image {
+  visibility: hidden;
+}
+
+.image:hover {
+  filter: brightness(60%);
+}
+
+.image > img {
+  max-width: 290px;
+  height: 290px;
+  object-fit: fill;
+}
+
+.foot-info {
+  max-width: 670px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.foot-info > ul {
+  display: flex;
+}
+
+.foot-info > ul > li > a {
+  padding: 0 6px;
+  font-size: 0.75rem;
+  color: gray;
+}
+
+.foot-under > select {
+  cursor: pointer;
+}
+
+.foot-under {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+
+  font-size: 0.75rem;
+  color: gray;
+}
+
+.foot-under > select {
+  margin-right: 20px;
+  color: gray;
+  border: none;
+  background-color: inherit;
+}
+
+@media screen and (max-width: 768px) {
+  .foot-info {
+    width: 330px;
+  }
+
+  .foot-info > ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

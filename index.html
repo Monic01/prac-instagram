@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prac_instagram</title>
+    <script
+      src="https://kit.fontawesome.com/7cd619a716.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <!-- login-container -->
+      <div class="login-container">
+        <div class="login-form">
+          <h1>Instagram</h1>
+          <form action="user.html">
+            <input type="text" placeholder="전화번호, 사용자 이름 또는 이메일" />
+            <input type="password" placeholder="비밀번호" /><br />
+            <input type="submit" value="로그인" id="btn-login" />
+          </form>
+          <div class="under-bar">
+            <div class="left"></div>
+            <div class="right"></div>
+            <p>또는</p>
+          </div>
+          <p class="face-login">
+            <a href="#"
+              ><i class="fa-brands fa-facebook-square"></i> <b>Facebook</b>으로 로그인</a
+            >
+          </p>
+          <p class="find-password">비밀번호를 잊으셨나요?</p>
+        </div>
+        <div class="sub-container">
+          <p>계정이 없으신가요?</p>
+          <b id="join">가입하기</b>
+        </div>
+        <div class="download">
+          <p>앱을 다운로드하세요.</p>
+          <div class="btn-wrap">
+            <button>
+              <i class="fa-brands fa-apple"></i>
+              <b>App Store</b> 에서<br />
+              다운로드 하기
+            </button>
+            <button>
+              <i class="fa-brands fa-google-play"></i>다운로드하기<br /><b>Google Play</b>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- join-container -->
+      <div class="join-container hidden">
+        <div class="join-container">
+          <div class="join-form">
+            <h1>Instagram</h1>
+            <p>친구들의 사진과 동영상을 보려면 가입하세요.</p>
+            <p class="face-login">
+              <button>
+                <i class="fa-brands fa-facebook-square"></i><b> Facebook</b>으로 로그인
+              </button>
+            </p>
+            <div class="under-bar">
+              <div class="left"></div>
+              <div class="right"></div>
+              <p>또는</p>
+            </div>
+            <form>
+              <input type="text" placeholder="휴대폰 번호 또는 이메일 주소" />
+              <input type="text" placeholder="성명" />
+              <input type="text" placeholder="사용자 이름" />
+              <input type="password" placeholder="비밀번호" /><br />
+              <input type="submit" value="가입" id="btn-join" />
+            </form>
+          </div>
+          <div class="sub-container">
+            <p>계정이 있으신가요?</p>
+            <b id="login">로그인</b>
+          </div>
+          <div class="download">
+            <p>앱을 다운로드하세요.</p>
+            <div class="btn-wrap">
+              <button>
+                <i class="fa-brands fa-apple"></i>
+                <b>App Store</b> 에서<br />
+                다운로드 하기
+              </button>
+              <button>
+                <i class="fa-brands fa-google-play"></i>다운로드하기<br /><b
+                  >Google Play</b
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="foot-container">
+        <div class="foot-info">
+          <ul>
+            <li><a href="#">Meta</a></li>
+            <li><a href="#">소개</a></li>
+            <li><a href="#">블로그</a></li>
+            <li><a href="#">채용 정보</a></li>
+            <li><a href="#">도움말</a></li>
+            <li><a href="#">API</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">약관</a></li>
+            <li><a href="#">인기 계정</a></li>
+            <li><a href="#">해시태그</a></li>
+            <li><a href="#">위치</a></li>
+            <li><a href="#">Instagram Lite</a></li>
+          </ul>
+          <div class="foot-under">
+            <select name="language" id="language">
+              <option value="korean">한국어</option>
+              <option value="english">english</option>
+            </select>
+            <p>ⓒ 2022 Instagram from Meta</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>

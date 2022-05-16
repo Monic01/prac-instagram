@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap");
+/* font-family: 'Oleo Script', cursive; */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(248, 248, 248);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+input::placeholder {
+  padding-left: 5px;
+}
+
+.hidden {
+  display: none;
+}
+
+.login-container,
+.join-container {
+  width: 350px;
+  margin: 110px auto;
+  margin-bottom: 0%;
+}
+
+.login-container {
+  margin-bottom: 158px;
+}
+
+.join-container {
+  margin-bottom: 50px;
+}
+
+.login-form,
+.join-form,
+.sub-container {
+  border: 1px solid rgb(216, 216, 216);
+  width: 350px;
+  background-color: white;
+}
+
+.login-form {
+  text-align: center;
+  height: 395px;
+}
+
+.login-form > h1 {
+  margin: 37px 0;
+  font-family: "Oleo Script", cursive;
+}
+
+.login-form > form,
+.join-form > form {
+  width: 270px;
+  margin: 0 auto;
+}
+
+.login-form > form > input,
+.join-form > form > input {
+  width: 100%;
+  height: 37px;
+  border: 1px solid rgb(216, 216, 216);
+  border-radius: 5px;
+
+  background-color: rgb(248, 248, 248);
+}
+
+.login-form > form > input:first-child {
+  margin-bottom: 7px;
+}
+
+.login-form > form > input:focus {
+  border: solid 1px black;
+}
+
+#btn-login,
+#btn-join {
+  width: 101%;
+  height: 32px;
+  margin-top: 15px;
+  color: white;
+
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(4, 144, 238);
+  cursor: pointer;
+}
+
+.under-bar {
+  position: relative;
+  margin: 20px 0;
+}
+
+.under-bar > p {
+  font-size: 0.8rem;
+}
+
+.under-bar > .left,
+.under-bar > .right {
+  width: 30%;
+  height: 1px;
+  background-color: rgb(216, 216, 216);
+  transform: translate(0, -50%);
+}
+
+.under-bar > .left {
+  position: absolute;
+  left: 40px;
+  top: 50%;
+}
+
+.under-bar > .right {
+  position: absolute;
+  right: 40px;
+  top: 50%;
+}
+
+.sub-container {
+  height: 60px;
+  margin-top: 15px;
+
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#join,
+#login {
+  cursor: pointer;
+  margin-left: 3px;
+  color: rgb(72, 157, 255);
+}
+
+.face-login {
+  font-size: 0.9rem;
+}
+
+.face-login > a {
+  color: rgb(43, 43, 145);
+}
+
+.find-password {
+  cursor: pointer;
+  font-size: 0.7rem;
+  margin: 23px 0;
+}
+
+.download {
+  text-align: center;
+}
+
+.btn-wrap {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn-wrap > button {
+  cursor: pointer;
+  background-color: black;
+  border-radius: 5px;
+  width: 135px;
+  height: 40px;
+
+  font-size: 0.8rem;
+  color: white;
+}
+
+.download > button:hover {
+  cursor: pointer;
+}
+
+.download > p {
+  font-size: 0.9rem;
+  margin: 25px 0;
+}
+
+.join-form {
+  height: 503px;
+  text-align: center;
+}
+
+.join-form > h1 {
+  margin: 20px 0;
+  margin-top: 38px;
+
+  font-family: "Oleo Script", cursive;
+}
+
+.join-form > p {
+  width: 250px;
+  margin: 0 auto;
+  font-weight: bold;
+  color: rgb(117, 117, 117);
+}
+
+.join-form .face-login {
+  margin-top: 20px;
+}
+
+.join-form > form > input {
+  margin-bottom: 8px;
+}
+
+.join-form > form > input:nth-child(4) {
+  margin: 0;
+}
+
+.join-form > .face-login {
+  width: 270px;
+}
+
+.face-login > button {
+  cursor: pointer;
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  font-weight: bold;
+  color: white;
+  background-color: rgb(72, 157, 255);
+  border: none;
+}
+
+.foot-info {
+  max-width: 670px;
+  margin: 0 auto;
+}
+
+.foot-info > ul {
+  display: flex;
+}
+
+.foot-info > ul > li > a {
+  padding: 0 6px;
+  font-size: 0.75rem;
+  color: gray;
+}
+
+.foot-under > select {
+  cursor: pointer;
+}
+
+.foot-under {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+
+  font-size: 0.75rem;
+  color: gray;
+}
+
+.foot-under > select {
+  margin-right: 20px;
+  color: gray;
+  border: none;
+  background-color: inherit;
+}
+
+@media screen and (max-width: 768px) {
+  .foot-info {
+    width: 330px;
+  }
+
+  .foot-info > ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
